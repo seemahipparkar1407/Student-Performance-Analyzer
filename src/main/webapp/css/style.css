@@ -1,0 +1,594 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f7fb;
+    color: #1f2937;
+}
+
+
+/* Navbar */
+
+.navbar {
+    height: 70px;
+    background: #1e3a8a;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 60px;
+}
+
+.logo {
+    color: white;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+
+/* Dashboard */
+
+.dashboard-container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 50px 30px;
+}
+
+
+/* Welcome Section */
+
+.welcome-section {
+    text-align: center;
+    margin-bottom: 45px;
+}
+
+.welcome-section h1 {
+    font-size: 34px;
+    margin-bottom: 12px;
+    color: #1e3a8a;
+}
+
+.welcome-section p {
+    font-size: 17px;
+    color: #64748b;
+}
+
+
+/* Cards */
+
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.dashboard-card {
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+    transition: 0.3s;
+}
+
+.dashboard-card:hover {
+    transform: translateY(-7px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+
+/* Card Icon */
+
+.card-icon {
+    font-size: 42px;
+    margin-bottom: 15px;
+}
+
+.dashboard-card h2 {
+    font-size: 21px;
+    margin-bottom: 10px;
+    color: #1e3a8a;
+}
+
+.dashboard-card p {
+    color: #64748b;
+    font-size: 14px;
+    line-height: 1.6;
+    min-height: 45px;
+}
+
+
+/* Buttons */
+
+.card-button {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 11px 25px;
+    background: #2563eb;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.card-button:hover {
+    background: #1d4ed8;
+}
+
+
+/* Delete Button */
+
+.delete-button {
+    background: #dc2626;
+}
+
+.delete-button:hover {
+    background: #b91c1c;
+}
+
+
+/* Footer */
+
+footer {
+    text-align: center;
+    padding: 25px;
+    margin-top: 30px;
+    color: #64748b;
+    font-size: 14px;
+}
+
+
+/* Responsive */
+
+@media (max-width: 900px) {
+
+    .card-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+@media (max-width: 600px) {
+
+    .navbar {
+        padding: 0 20px;
+    }
+
+    .logo {
+        font-size: 18px;
+    }
+
+    .card-container {
+        grid-template-columns: 1fr;
+    }
+
+    .welcome-section h1 {
+        font-size: 27px;
+    }
+
+}
+
+/* Form Page */
+
+.form-container {
+    min-height: calc(100vh - 70px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 20px;
+}
+
+.form-card {
+    background: white;
+    width: 600px;
+    padding: 40px;
+    border-radius: 18px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+}
+
+.form-card h1 {
+    text-align: center;
+    color: #1e3a8a;
+    margin-bottom: 8px;
+}
+
+.form-subtitle {
+    text-align: center;
+    color: #64748b;
+    margin-bottom: 30px;
+}
+
+.form-row {
+    display: flex;
+    gap: 20px;
+}
+
+.form-row .form-group {
+    width: 50%;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 7px;
+    font-weight: bold;
+    color: #334155;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #cbd5e1;
+    border-radius: 8px;
+    font-size: 15px;
+    outline: none;
+}
+
+.form-group input:focus {
+    border-color: #2563eb;
+}
+
+.submit-button {
+    width: 100%;
+    padding: 13px;
+    border: none;
+    border-radius: 8px;
+    background: #2563eb;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.submit-button:hover {
+    background: #1d4ed8;
+}
+
+.back-link {
+    display: block;
+    text-align: center;
+    margin-top: 20px;
+    color: #2563eb;
+    text-decoration: none;
+}
+
+.back-link:hover {
+    text-decoration: underline;
+}
+
+/* Performance Result */
+
+.result-container {
+    max-width: 1000px;
+    margin: auto;
+    padding: 50px 25px;
+}
+
+.result-header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.result-header h1 {
+    color: #1e3a8a;
+    margin-bottom: 8px;
+}
+
+.result-header p {
+    color: #64748b;
+}
+
+.student-info {
+    background: white;
+    padding: 25px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+    margin-bottom: 25px;
+}
+
+.student-info h2 {
+    color: #1e3a8a;
+    margin-bottom: 8px;
+}
+
+.student-info p {
+    color: #64748b;
+}
+
+
+/* Subject Cards */
+
+.result-cards {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    margin-bottom: 25px;
+}
+
+.result-card {
+    background: white;
+    padding: 25px 15px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+}
+
+.result-card span {
+    display: block;
+    color: #64748b;
+    margin-bottom: 10px;
+}
+
+.result-card strong {
+    display: block;
+    font-size: 30px;
+    color: #2563eb;
+}
+
+.result-card small {
+    color: #94a3b8;
+}
+
+
+/* Summary */
+
+.performance-summary {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    background: white;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+}
+
+.performance-summary div {
+    text-align: center;
+}
+
+.performance-summary span {
+    display: block;
+    color: #64748b;
+    margin-bottom: 8px;
+}
+
+.performance-summary strong {
+    font-size: 22px;
+    color: #1e3a8a;
+}
+
+
+/* Result Buttons */
+
+.result-actions {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.result-actions .back-link {
+    margin-top: 15px;
+}
+
+
+/* Responsive */
+
+@media (max-width: 800px) {
+
+    .result-cards,
+    .performance-summary {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+@media (max-width: 500px) {
+
+    .result-cards,
+    .performance-summary {
+        grid-template-columns: 1fr;
+    }
+
+}
+
+/* ==========================================
+   Table & View Student Page Styles 
+   ========================================== */
+
+/* Table Layout Container */
+.table-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 50px 30px;
+}
+
+/* Page Heading Spacing */
+.page-heading {
+    text-align: center;
+    margin-bottom: 45px;
+}
+
+.page-heading h1 {
+    font-size: 34px;
+    margin-bottom: 12px;
+    color: #1e3a8a;
+}
+
+.page-heading p {
+    font-size: 17px;
+    color: #64748b;
+}
+
+/* Table Wrapper Card */
+.table-card {
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+    overflow: hidden; /* Keeps table corners rounded */
+    margin-bottom: 30px;
+}
+
+/* Base Data Table Configuration */
+.table-card table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: left;
+    background: white;
+}
+
+/* Table Row Header Definitions */
+.table-card th {
+    background-color: #1e3a8a; /* Matches your dashboard header theme */
+    color: white;
+    font-weight: bold;
+    padding: 16px 20px;
+    font-size: 15px;
+    letter-spacing: 0.5px;
+}
+
+/* Inner Table Grid Data Cells */
+.table-card td {
+    padding: 16px 20px;
+    font-size: 15px;
+    color: #4b5563;
+    border-bottom: 1px solid #e5e7eb;
+}
+
+/* Alternating Row Striping Layer */
+.table-card tbody tr:nth-child(even) {
+    background-color: #f8fafc;
+}
+
+/* Interactive Hover Feedback */
+.table-card tbody tr:hover {
+    background-color: #f1f5f9;
+    transition: background-color 0.2s ease;
+}
+
+/* Navigation & Button Row Alignment */
+.table-actions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 25px;
+}
+
+/* Force back-link text inside table views to align flat */
+.table-actions .back-link {
+    margin-top: 0; 
+}
+
+/* ==========================================
+   Navbar & Logo Layout Fixes 
+   ========================================== */
+
+/* 1. Force the navigation bar to stay at a clean, fixed height */
+.navbar {
+    height: 70px;
+    background: #1e3a8a;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 40px;
+    width: 100%;
+    box-sizing: border-box;
+    position: relative;
+    z-index: 100;
+}
+
+/* 2. Group the image and project name side-by-side cleanly */
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 12px; /* Generates a crisp space between the graphic and text */
+}
+
+/* 3. CRUCIAL FIX: Shrink and constrain your massive logo image */
+.logo img {
+    height: 45px;       /* Shrinks the logo to perfectly fit inside the 70px navbar */
+    width: auto;        /* Preserves natural proportions without distortion */
+    object-fit: contain;/* Ensures the image bounds crisp up inside its grid box */
+    border-radius: 4px; /* Optional: adds a tiny clean edge radius */
+}
+
+/* 4. Format the app title text next to your logo graphic */
+.logo span {
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+    white-space: nowrap; /* Prevents text from breaking into two lines */
+}
+
+/* Direct layout override for the navbar logo */
+.navbar .logo img {
+    height: 45px !important;    /* Force-restricts the giant image to header size */
+    width: auto !important;      /* Keeps the image aspect ratio square and perfect */
+    object-fit: contain;
+    display: inline-block;
+}
+
+.navbar .logo {
+    display: flex !important;
+    align-items: center !important;
+    gap: 15px;
+}
+
+/* Base container styling for the column cells */
+td {
+    padding: 12px 8px;
+    vertical-align: middle;
+}
+
+/* Professional Circular Action Buttons */
+.action-btn {
+    text-decoration: none;
+    font-size: 14px; /* Perfectly scales the emojis */
+    width: 36px;
+    height: 36px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px; /* Smooth rounded corners */
+    margin: 0 8px; /* This creates the perfect space between the two buttons */
+    transition: all 0.2s ease-in-out;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05); /* Soft professional shadow */
+}
+
+/* Professional Update Button Layout */
+.edit-btn {
+    background-color: #e8f0fe; /* Premium light blue tint */
+    border: 1px solid #d2e3fc;
+}
+
+.edit-btn:hover {
+    background-color: #3b82f6; /* Modern solid blue on hover */
+    transform: translateY(-2px); /* Gentle lift effect */
+    box-shadow: 0 4px 12px rgba(59, 130, 246, 0.3);
+}
+
+/* Professional Delete Button Layout */
+.delete-btn {
+    background-color: #fce8e6; /* Premium light red tint */
+    border: 1px solid #fad2cf;
+}
+
+.delete-btn:hover {
+    background-color: #ef4444; /* Modern solid red on hover */
+    transform: translateY(-2px); /* Gentle lift effect */
+    box-shadow: 0 4px 12px rgba(239, 68, 68, 0.3);
+}
+

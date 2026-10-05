@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="https://jakarta.ee"
+         xmlns:xsi="http://w3.org"
+         xsi:schemaLocation="https://jakarta.ee https://jakarta.ee"
+         version="6.0"
+         metadata-complete="false">
+
+    <!-- Welcome file list configuration -->
+    <welcome-file-list>
+        <welcome-file>login.jsp</welcome-file>
+    </welcome-file-list>
+
+    <!-- Global UTF-8 Encoding for all JSP Pages -->
+    <jsp-config>
+        <jsp-property-group>
+            <url-pattern>*.jsp</url-pattern>
+            <page-encoding>UTF-8</page-encoding>
+        </jsp-property-group>
+    </jsp-config>
+
+</web-app>
